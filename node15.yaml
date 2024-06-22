@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+cat apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-node
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app-node
-        image: lgcosta/app-node-image:latest
+        image: lgcosta/app-node-15:1.0
         ports:
         - containerPort: 3000
 
